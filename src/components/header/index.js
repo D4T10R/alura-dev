@@ -27,6 +27,15 @@ const Cabecalho = styled.header`
         display: none;
     }
 
+    .icone__hamburguer {
+        border: 10px solid transparent;
+    }
+
+    .icone__hamburguer:hover {
+        background: rgba(80, 129, 251, 0.08);
+        border-radius: 10px;
+    }
+
     @media screen and (min-width: 768px) {
         margin: 2.5em 0;
 

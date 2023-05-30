@@ -1,6 +1,7 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import Header from "./components/header";
 import { GlobalStyles } from "./globalStyles";
+import PaginaInicial from "./pages/PaginaIncial";
 
 function AppRoutes() {
     return (
@@ -10,7 +11,7 @@ function AppRoutes() {
             <Header/>
             
             <Routes>
-                
+                <Route path="/" element={<PaginaInicial />} />
             </Routes>
         </BrowserRouter>
     )
